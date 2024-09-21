@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var estudante =[]
+            var nome_do_estudante
+
+            while(true){
+                nome_do_estudante = prompt("Digite o nome do estudante ou digite 'pare' ")
+                
+                if(nome_do_estudante === "pare"){
+                    break
+                }
+                
+                estudante.push(nome_do_estudante)
+            }
+            
+            alert("Estudantes cadastrado: " + estudante)
+            estudante.forEach((estudante, index) => {
+                alert(`Lista dos estudantes: ${index + 1}: ${estudante}`)
+            })
+        </script>
+    </body>
+    </html>
+</body>
+</html>
